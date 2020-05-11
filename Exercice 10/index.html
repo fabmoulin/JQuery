@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 10 Jquery</title>
+  <style>
+      #green {
+      background-color: darkgreen;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      margin:10px;
+    }
+    #red {
+      background-color: darkred;
+      width: 30px;
+      height: 30px;
+      padding:5px;
+      margin:10px;
+    }
+    #blue {
+      background-color: mediumblue;
+      width: 30px;
+      height: 30px;
+      padding:5px;
+      margin:10px;
+    }
+    #blocs {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="text">
+    Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+  </p>
+  <div id="blocs">
+  <div class="color green" id="green"></div>
+  <div class="color red" id="red"></div>
+  <div class="color blue" id="blue"></div>
+</div>
+<script src="assets/js/jquery-3.2.1.js"></script>
+
+<script>
+$(function(){
+    //Lorsque la souris entre dans la div
+    $("#green").mouseenter(function(){
+        //On ajoute une couleur au texte de la div
+        $("#text").css("color", "green");
+    });
+    //Lorsque la souris ressort de la div
+    $("#green").mouseleave(function(){
+        //On remet le texte en noir
+        $('#text').css("color", "black");
+    });
+    //Lorsque la souris entre dans la div
+        $("#red").mouseenter(function(){
+      //On ajoute une couleur au texte de la div
+        $("#text").css("color", "red");
+    });
+    //Lorsque la souris ressort de la div
+    $("#red").mouseleave(function(){
+      //On remet le texte en noir
+        $('#text').css("color", "black");
+    });
+
+    //Lorsque la souris entre dans la div
+        $("#blue").mouseenter(function(){
+      //On ajoute une couleur au texte de la div
+        $("#text").css("color", "blue");
+    });
+    //Lorsque la souris ressort de la div
+    $("#blue").mouseleave(function(){
+      //On remet le texte en noir
+        $('#text').css("color", "black");
+    });
+});
+</script>
+
+</body>
+</html>
