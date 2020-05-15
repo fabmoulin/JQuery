@@ -1,0 +1,13 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+background-color: lightgrey;
+border-radius: 5px;
+text-align: center;
+}
+
+#calculate {
+    font-family: 'Courier New', Courier, monospace;
+}
